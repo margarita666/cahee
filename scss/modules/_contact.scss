@@ -1,0 +1,54 @@
+.contact{
+	background: url('../images/contact-bg.png') no-repeat top center;
+	background-size: cover;
+	padding:8% 0 13%;
+	&__desc{
+		text-align: center;
+		margin:2% 0;
+	}
+
+	&__items{
+		@media (max-width: $width-sm){
+			margin-top: 15px
+		}
+	}
+
+	&__information{
+		font:300 17px $font;
+		span{
+			line-height: 1.6;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+   // margin-bottom: 20px;
+    
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+		color: #fff;
+	}
+
+	&__input{
+		background: rgba(0,196,196,.5);
+		padding: 20px 20px ; 
+		font-weight: 700;
+		font-size: 0.83rem;
+		line-height: 1.6;   
+		color: #fff;
+    	// margin-bottom: 15px;
+		margin-top: 15px;
+		&::placeholder{
+			color: #fff;
+			font:300 15px/1.6 $font;
+		}
+		&:hover, 
+		&:focus{
+			background: rgba(0,196,196, 1);
+			border-left: 4px solid #355b82;
+			transition: all .2s;
+		}
+	}
+}
+

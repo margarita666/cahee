@@ -1,0 +1,92 @@
+.gallery{
+	background-color: #ffe92f;
+	padding-top: 8%;
+	&__items{
+		 @media (max-width: $width-lg){
+			display: none;
+		} 
+		margin-bottom: 4%;
+	}
+	&__title{
+		text-align: center;
+		@media (min-width: $width-md){
+			margin-bottom: 20px;
+		}
+		@media (max-width: $width-md){
+			margin-bottom: 15px;
+		}
+	}
+	&__form{
+		text-align: center;
+		@media (max-width: $width-sm){
+			
+		}
+	}
+	&__desc{
+		text-align: center;
+		margin-bottom:50px;
+		font-weight: 300;
+		@media (max-width: $width-sm){
+			margin-bottom: 30px;
+		}
+	}
+
+	&__button{
+		font:300 1.1rem/1.7 $font;
+		padding: 10px 45px;
+		background: #5585a2;
+		text-transform: uppercase;
+		color: #fff;
+		margin-bottom: 15%;
+		@media (max-width: $width-sm){
+			margin-bottom: 20%;
+		}
+		@media (min-width: $width-sm) and (max-width: $width-md){
+			margin-bottom: 11%;	
+		}
+		@media (min-width: $width-md){
+			margin-bottom: 10%;
+		}
+		cursor: pointer;
+	}
+}
+
+.row-one{
+	margin-bottom: 30px;
+}
+
+ .slider{
+	display: none;
+	@media (max-width: $width-sm){
+		margin: 30px;
+	}
+	@media (min-width: $width-sm) and (max-width: $width-md) {
+		margin: 40px;
+	}
+	@media (min-width: $width-md){
+		margin: 45px;
+	}
+	@media (max-width: $width-lg){
+			display: block;
+		}
+}
+
+.slick-arrow{
+	@media (min-width: $width-md) and (max-width: $width-lg){
+	
+	}
+	@media (max-width: $width-sm){
+		//margin: 30px;
+	}
+}
+.slick-prev:before, 
+.slick-next:before{
+	font-size: 30px;
+}
+
+.slick-prev{
+	left:-35px;
+}
+.slick-list{
+	width: 100%;}
+ 

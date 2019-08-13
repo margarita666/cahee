@@ -1,0 +1,52 @@
+.header{
+	background: url('../images/header.jpg') no-repeat top center;
+	background-size: cover;
+	//height:100%;
+	width: 100%;
+	padding-top: 5%;
+	color:$black;
+	@media (min-width: $width-lg-xl){
+		height: 100vh;
+	}
+	@media (max-width: $width-lg-xl){
+		padding-bottom: 15%;
+	}
+	&__title{
+		font-size: 3.75rem;
+		@media (max-width: $width-sm){
+			font-size: 2.75rem;
+		}
+		font-weight: 800;
+		margin-bottom: 1%;
+	}
+	&__desc{
+		line-height: 1.68rem;
+		margin-bottom: 3%;
+		@media (max-width: $width-sm){
+			margin-right: 40%;
+		}
+	}
+	&__button{
+		@media (max-width: $width-sm){
+			padding: 15px;
+			font-size: 1rem;
+		}
+		padding: 20px;
+		font-family: $font;
+		background: #ff6033;
+		color:#fff;
+		font-size: 1.25rem;
+		text-transform:uppercase;
+		font-weight: 300;
+		cursor: pointer;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}
+
+.logo{
+	font-size: 3.125rem;
+	font-family: $pacif;
+}
+

@@ -1,0 +1,21 @@
+.footer{
+	background-color: $black;
+	color: #b9b9b9;
+	padding: 2% 0;
+	&__center{
+		font:25px/1 $pacif;
+		text-align: center;
+	}
+	&__right{
+		text-align: right;
+		span{
+			color: #ff2b58;
+		}
+	}
+}
+
+.align-between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

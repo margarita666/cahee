@@ -1,0 +1,55 @@
+.subscribe{
+	padding-top: 10%;
+	background: url('../images/subscribe.jpg') no-repeat top center;
+	background-size: cover;
+	padding-bottom: 11%;
+	@media (max-width: $width-md){
+		padding-top: 6%;
+		padding-bottom: 9%;
+
+	}
+	&__title{
+		font-size: 2.2rem;
+		font-weight: 700;
+		line-height: 1.4;
+		margin-bottom: 1%;
+	}
+	&__desc{
+		@media (max-width: $width-sm){
+			width: 80%;
+			margin-bottom: 10px;
+		}
+		@media (min-width: $width-sm) and (max-width: $width-lg){
+			width: 70%;	
+		}
+		margin-bottom: 2%;
+	}
+
+	&__email{
+		@media (max-width: $width-lg){
+			padding: 15px 10px;
+			margin-bottom: 15px;
+		}
+		padding: 20px 15px;
+		margin-right: 30px;
+		border: 1px solid $black;
+		&::placeholder{
+			
+			font:300 1rem/1.6 $font;
+		}
+	}
+
+	&__btn{
+		@media (max-width: $width-lg){
+			padding: 10px 0;
+		}
+		background-color: #96b92c;
+		color:#fff;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		cursor: pointer;
+	}
+}
+.row-sub{
+	padding: 0 15px;
+}
