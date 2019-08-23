@@ -8,6 +8,9 @@
 			$(this).toggleClass('burger-menu--active');
 			$('body').toggleClass('is-menu-shown');
 		});
+		$('.menu__item').click(() => {
+			$('.burger-menu').removeClass('burger-menu--active');
+		});
 		//SLIDER
 		$('.slider').slick();
 		//$('.menu__link')
